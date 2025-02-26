@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cousine", monospace;
+    color: #353533;
+}
+body {
+    position: relative;
+}
+.container {
+    background-color: #dfe0e2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    .headerContainer {
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        .contactInfo {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    .sidePanel {
+        height: 100%;
+        width: 350px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    #navBar {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        flex-direction: column;
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    #openResponsiveMenu {
+        display: none;
+    }
+    .responsiveMenu {
+        display: none;
+    }
+    .navButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-top: 40px;
+        flex-direction: column;
+        padding: 0;
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex-direction: column;
+            margin: 2px 0;
+            img {
+                width: 180px;
+                margin: 0 5px;
+            }
+        }
+    }
+    .profile p {
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 40px;
+    }
+}
+
+#contact {
+    width: 100%;
+    background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .firstRow {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        .contactInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+    .socialMedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        img {
+            width: 50px;
+        }
+    }
+    .secondRow {
+        font-size: 12px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            color: black;
+        }
+    }
+}
+
+.reels {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 70px;
+    margin-bottom: 50px;
+    background-image: url(../assets/ArtGallery_Renders/Box_Art_Gall_V02.png);
+    background-size: calc(100% - 40px) calc(100% - 40px);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 700px;
+    .instagram-media {
+        max-width: 300px;
+        background: #fff;
+        border: 0;
+        border-radius: 3px;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+            0 1px 10px 0 rgba(0, 0, 0, 0.15);
+        margin: 0 auto;
+        min-width: 326px;
+        padding: 0;
+        width: 99.375%;
+        width: -webkit-calc(100% - 2px);
+        width: calc(100% - 2px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-image: unset;
+        flex-direction: column;
+    }
+    .container .headerContainer {
+        flex-direction: column;
+        background-image: unset;
+        width: 100%;
+    }
+    .container .headerContainer .sidePanel {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .container .headerContainer .sidePanel #navBar {
+        flex-direction: row;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    .container .headerContainer .sidePanel #navBar #openResponsiveMenu {
+        display: unset;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+    .container .headerContainer .sidePanel #navBar #openResponsiveMenu img {
+        width: 100px;
+    }
+    .container .headerContainer .sidePanel #navBar .responsiveMenu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #dfe0e2;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 4;
+    }
+    .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        list-style-type: none;
+        margin-top: 40px;
+    }
+    .container
+        .headerContainer
+        .sidePanel
+        #navBar
+        .responsiveMenu
+        .navButtons
+        .button {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+    }
+    .container
+        .headerContainer
+        .sidePanel
+        #navBar
+        .responsiveMenu
+        .navButtons
+        .button
+        img {
+        width: 250px;
+        margin: 0 5px;
+    }
+    .container
+        .headerContainer
+        .sidePanel
+        #navBar
+        .responsiveMenu
+        #closeResponsiveMenu {
+        position: absolute;
+        top: 24px;
+        left: 20px;
+        display: unset;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+    .container
+        .headerContainer
+        .sidePanel
+        #navBar
+        .responsiveMenu
+        #closeResponsiveMenu
+        img {
+        width: 100px;
+    }
+    .container .headerContainer .sidePanel #navBar .navButtons {
+        display: none;
+    }
+    .container .headerContainer .sidePanel a {
+        width: unset;
+    }
+    .container .headerContainer .contactInfo .getInContact {
+        width: 95%;
+        margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cousine", monospace;
+  color: #353533;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0, 0, 0));
+}
+
+body {
+  position: relative;
+  background-color: #dfe0e2;
+  background-image: url("./assets/Frontpage_Renders/BG_yellow_Frontpage_01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  padding: 0 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#landing #navBar {
+  display: flex;
+  width: 100%;
+  align-items: end;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+#landing #navBar .dmLogo {
+  width: 180px;
+}
+#landing #navBar .navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 10px;
+}
+#landing #navBar .navButtons .button {
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 150px;
+}
+#landing #navBar .navButtons .button img {
+  width: 150px;
+  margin: 0 5px;
+  z-index: 3;
+}
+#landing #navBar .navButtons .button .face {
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  transition: bottom 0.5s ease-out;
+}
+#landing #navBar #openResponsiveMenu {
+  display: none;
+}
+#landing #navBar .responsiveMenu {
+  display: none;
+}
+#landing .introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#landing .introContainer .profileImgContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+}
+#landing .introContainer .profileImgContainer img {
+  width: auto;
+  height: auto;
+  max-height: calc(100vh - 160px);
+}
+#landing .introContainer #intro {
+  margin-left: 30px;
+}
+#landing .introContainer #intro p {
+  margin: 10px;
+  font-size: 18px;
+}
+#landing .introContainer .video {
+  text-align: center;
+}
+
+#portfolio {
+  background-color: #828385;
+}
+#portfolio .sectionHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #000000;
+}
+#portfolio .projectsLinks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#portfolio .projectsLinks .portfolioLink {
+  width: 400px;
+  margin: 50px;
+}
+
+#collective {
+  position: relative;
+  padding-bottom: 150px;
+}
+#collective .sectionHeader {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #000000;
+}
+#collective .sectionHeader img {
+  position: absolute;
+  top: 5px;
+  z-index: 1;
+}
+#collective .collectiveLinks {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 0;
+}
+#collective .collectiveLinks .collectiveLink {
+  width: 400px;
+}
+#collective .profilePicture {
+  width: 600px;
+  position: absolute;
+  bottom: 0;
+}
+
+#contact {
+  width: 100%;
+  background-image: url("./assets/Frontpage_Renders/Button_V02.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .firstRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contact .firstRow .socialMedia img {
+  width: 50px;
+}
+#contact .secondRow {
+  font-size: 12px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .secondRow a {
+  color: black;
+}
+
+@media screen and (max-width: 1023px) {
+  * {
+    overflow-x: hidden;
+  }
+  #landing {
+    height: unset;
+    padding: 0px;
+    justify-content: start;
+  }
+  #landing #navBar {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  #landing #navBar .dmLogo {
+    width: 180px;
+  }
+  #landing #navBar .navButtons {
+    display: none;
+  }
+  #landing #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar #openResponsiveMenu img {
+    width: 100px;
+  }
+  #landing #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+  }
+  #landing #navBar .responsiveMenu .navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+  }
+  #landing #navBar .responsiveMenu .navButtons li {
+    overflow: hidden;
+  }
+  #landing #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+  #landing #navBar .responsiveMenu .navButtons .button img {
+    width: 250px !important;
+    margin: 0 5px;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 100px;
+  }
+  #landing .introContainer {
+    flex-direction: column;
+  }
+  #landing .introContainer .profileImgContainer {
+    width: 80%;
+  }
+  #landing .introContainer #intro {
+    width: 100%;
+    margin-left: unset;
+    padding: 0 50px;
+    box-sizing: border-box;
+    border-top: 20px solid black;
+  }
+  #portfolio .projectsLinks .portfolioLink {
+    width: 300px;
+    margin: 50px;
+  }
+  #collective {
+    position: relative;
+    padding-bottom: 250px;
+  }
+  #collective .sectionHeader {
+    overflow-x: unset;
+    z-index: 4;
+  }
+  #collective .collectiveLinks {
+    margin-top: 90px;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px; */
+    z-index: 3;
+  }
+  #collective .collectiveLinks .collectiveLink {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #collective .profilePicture {
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #landing {
+    padding: 0;
+  }
+  #landing .dmLogo {
+    width: 180px !important;
+  }
+  #landing .button img {
+    width: 130px !important;
+  }
+  #landing .introContainer #intro p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=styles.css.map */

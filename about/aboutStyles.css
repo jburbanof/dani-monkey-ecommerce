@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cousine", monospace;
+  color: #353533;
+}
+
+.container {
+  background-color: #dfe0e2;
+  background-image: url("../assets/About_Renders/about_texture_LB01_v02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  overflow: hidden;
+}
+.container .headerContainer {
+  background-image: url("../assets/About_Renders/monkeyprofile_02_v02_optimized.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+}
+.container .headerContainer .sidePanel {
+  height: 100%;
+  width: 350px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.container .headerContainer .sidePanel #navBar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.container .headerContainer .sidePanel #navBar #openResponsiveMenu {
+  display: none;
+}
+.container .headerContainer .sidePanel #navBar .responsiveMenu {
+  display: none;
+}
+.container .headerContainer .sidePanel #navBar .navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 40px;
+  flex-direction: column;
+  padding: 0;
+}
+.container .headerContainer .sidePanel #navBar .navButtons .button {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  margin: 2px 0;
+}
+.container .headerContainer .sidePanel #navBar .navButtons .button img {
+  width: 180px;
+  margin: 0 5px;
+}
+.container .headerContainer .sidePanel a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .headerContainer .contactInfo {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.container .headerContainer .contactInfo .profile p {
+  font-size: 20px;
+  padding: 15px 40px;
+}
+.container .headerContainer .contactInfo .header {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 40px;
+}
+.container .headerContainer .contactInfo .getInContact {
+  width: 70%;
+  margin-bottom: 40px;
+}
+.container .headerContainer .contactInfo .getInContact .contactImages {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: rows;
+}
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks {
+  position: relative;
+  width: 50%;
+}
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia a {
+  width: calc(33% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  border-radius: 50%;
+}
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia img {
+  width: 100%;
+  margin: 0 5px;
+}
+.container .headerContainer .contactInfo .getInContact .contactImages .contactLinks .socialMedia a:hover {
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  width: calc(33% - 10px);
+}
+.container .headerContainer .contactInfo .getInContact .contactForm {
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container .headerContainer .contactInfo .getInContact .contactForm input,
+.container .headerContainer .contactInfo .getInContact .contactForm textarea,
+.container .headerContainer .contactInfo .getInContact .contactForm button {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.container .headerContainer .contactInfo .getInContact .contactForm textarea {
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 250px;
+  min-height: 100px;
+}
+.container .headerContainer .contactInfo .getInContact .contactForm #submit {
+  cursor: pointer;
+  border: none;
+  background-color: #faea24;
+}
+
+.workedIn {
+  width: 100%;
+  background-image: url("../assets/About_Renders/about_Texture_LB03_v02.png");
+  background-position: top -10px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.workedIn .productions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.workedIn .productions img {
+  margin: 20px 20px;
+}
+
+.workedWith {
+  width: 100%;
+  background-image: url("../assets/About_Renders/about_Texture_LB04_v02.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.workedWith .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.workedWith .logos img {
+  margin: 20px 20px;
+}
+
+#contact {
+  width: 100%;
+  background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .firstRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contact .firstRow .socialMedia img {
+  width: 50px;
+}
+#contact .secondRow {
+  font-size: 12px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .secondRow a {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-image: unset;
+  }
+  .container .headerContainer {
+    flex-direction: column;
+    background-image: unset;
+  }
+  .container .headerContainer .sidePanel {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .container .headerContainer .sidePanel #navBar {
+    flex-direction: row;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .container .headerContainer .sidePanel #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .headerContainer .sidePanel #navBar #openResponsiveMenu img {
+    width: 100px;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 4;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons .button img {
+    width: 250px;
+    margin: 0 5px;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .headerContainer .sidePanel #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 100px;
+  }
+  .container .headerContainer .sidePanel #navBar .navButtons {
+    display: none;
+  }
+  .container .headerContainer .sidePanel a {
+    width: unset;
+  }
+  .container .headerContainer .contactInfo .getInContact {
+    width: 95%;
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=aboutStyles.css.map */

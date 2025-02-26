@@ -1,0 +1,27 @@
+{
+  "name": "dani-monkey",
+  "version": "1.0.0",
+  "description": "Dani monkey portfolio",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jburbanof/dani-monkey.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Danimonkey",
+    "animation",
+    "storyboard",
+    "Collective",
+    "monkey"
+  ],
+  "author": "Danilo Sanchez, Julian Burbano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jburbanof/dani-monkey/issues"
+  },
+  "homepage": "https://github.com/jburbanof/dani-monkey#readme"
+}
