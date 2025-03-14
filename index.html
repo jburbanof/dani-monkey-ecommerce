@@ -1,369 +1,240 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1 user-scalable=no"
-        />
-        <link
-            rel="icon"
-            href="./assets/GeneralAssets/topicon.png"
-            type="image/png"
-        />
-        <meta
-            name="keywords"
-            content="Danimonkey, portfolio, collectiveMonkey, 2D animator, Storyboarder"
-        />
-        <meta name="author" content="Danilo Sanchez, Julian Burbano" />
-        <meta
-            name="description"
-            content="Danilo (DaniMonkey) Sanchez portfolio"
-        />
-        <meta name="page-topic" content="Graphic design" />
-        <meta name="page-type" content="Portfolio" />
-        <meta name="audience" content="Everyone" />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Dani monkey</title>
-    </head>
-    <body>
-        <header id="landing">
-            <nav id="navBar">
-                <button id="openResponsiveMenu">
-                    <img
-                        src="./assets/GeneralAssets/button_menu_logos.png"
-                        alt="Open menu"
-                    />
-                </button>
-                <div class="responsiveMenu">
-                    <button id="closeResponsiveMenu">
-                        <img
-                            src="./assets/GeneralAssets/button_close_logos.png"
-                            alt="Close menu"
-                        />
-                    </button>
-                    <img
-                        class="dmLogo"
-                        src="./assets/GeneralAssets/Dani_Monkey_V02_B.png"
-                        alt="DaniMonkey logo"
-                    />
-                    <ul class="navButtons">
-                        <li>
-                            <a class="button" href="./industrySB/">
-                                <img
-                                    src="./assets/GeneralAssets/header_storybord_V03.png"
-                                    alt="Navigate to Indistry Storyboard"
-                                />
-                            </a>
-                        </li>
-                        <li>
-                            <a class="button" href="./animation">
-                                <img
-                                    src="./assets/GeneralAssets/header_animation_V02.png"
-                                    alt="Navigate to animation"
-                                />
-                            </a>
-                        </li>
-                        <li>
-                            <a class="button" href="./story-board">
-                                <img
-                                    src="./assets/GeneralAssets/header_storybord_V02.png"
-                                    alt="Navigate to storyboard"
-                                />
-                            </a>
-                        </li>
-                        <li>
-                            <a class="button" href="./collectiveMonkey">
-                                <img
-                                    src="./assets/GeneralAssets/header_Cmonkey_V02.png"
-                                    alt="Navigate to collective monkey"
-                                />
-                            </a>
-                        </li>
-                        <li>
-                            <a class="button" href="./art-gallery/">
-                                <img
-                                    src="./assets/GeneralAssets/header_Art_Gall_V02.png"
-                                    alt="Navigate to art gallery"
-                                />
-                            </a>
-                        </li>
-                        <li>
-                            <a class="button" href="./about/">
-                                <img
-                                    src="./assets/GeneralAssets/header_WDani_V02.png"
-                                    alt="Navigate to about"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1 user-scalable=no"
+    />
+    <link
+      rel="icon"
+      href="./assets/GeneralAssets/topicon.png"
+      type="image/png"
+    />
+    <meta
+      name="keywords"
+      content="Danimonkey, portfolio, collectiveMonkey, 2D animator, Storyboarder"
+    />
+    <meta name="author" content="Danilo Sanchez, Julian Burbano" />
+    <meta name="description" content="Danilo (DaniMonkey) Sanchez portfolio" />
+    <meta name="page-topic" content="Graphic design" />
+    <meta name="page-type" content="Portfolio" />
+    <meta name="audience" content="Everyone" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Dani monkey</title>
+  </head>
+  <body>
+    <header id="landing">
+      <nav id="navBar">
+        <button id="openResponsiveMenu">
+          <img
+            src="./assets/GeneralAssets/button_menu_logos.png"
+            alt="Open menu"
+          />
+        </button>
+        <div class="responsiveMenu">
+          <button id="closeResponsiveMenu">
+            <img
+              src="./assets/GeneralAssets/button_close_logos.png"
+              alt="Close menu"
+            />
+          </button>
+          <img
+            class="dmLogo"
+            src="./assets/GeneralAssets/Danimonkey_Logo_Black_trans_2025 (1).png"
+            alt="DaniMonkey logo"
+          />
+          <ul class="navButtons">
+            <li>
+              <a class="button" href="./illustration/">
+                <img src="" alt="Navigate to Indistry Storyboard" />
+              </a>
+            </li>
+            <li>
+              <a class="button" href="./animation">
                 <img
-                    class="dmLogo"
-                    src="./assets/GeneralAssets/Dani_Monkey_V02_B.png"
-                    alt="Danimonkey logo"
+                  src="./assets/GeneralAssets/header_animation_V02.png"
+                  alt="Navigate to animation"
                 />
-
-                <ul class="navButtons">
-                    <li>
-                        <a class="button" href="./industrySB">
-                            <img
-                                src="./assets/Frontpage_Renders/Header/Small_images_M2_V01.png"
-                                alt="Navigate to collectiveMonkey"
-                                class="face"
-                                id="face3"
-                            />
-                            <img
-                                src="./assets/GeneralAssets/header_storybord_V03.png"
-                                alt="Navigate to Storyboard industry "
-                                class="buttonTag"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a class="button" href="./animation">
-                            <img
-                                src="./assets/Frontpage_Renders/Header/Small_images_M1_V01.png"
-                                alt="Navigate to animation"
-                                class="face"
-                                id="face1"
-                            />
-                            <img
-                                src="./assets/GeneralAssets/header_animation_V02.png"
-                                alt="Navigate to animation"
-                                class="buttonTag"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a class="button" href="./art-gallery/">
-                            <img
-                                src="./assets/Frontpage_Renders/Header/Small_images_M3_V01.png"
-                                alt="Navigate to art-gallery"
-                                class="face"
-                                id="face5"
-                            />
-                            <img
-                                src="./assets/GeneralAssets/header_Art_Gall_V02.png"
-                                alt="Navigate to art-gallery"
-                                class="buttonTag"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a class="button" href="./story-board">
-                            <img
-                                src="./assets/Frontpage_Renders/Header/Small_images_M2_V01.png"
-                                alt="Navigate to storyboard"
-                                class="face"
-                                id="face2"
-                            />
-                            <img
-                                src="./assets/GeneralAssets/header_storybord_V02.png"
-                                alt="Navigate to storyboard"
-                                class="buttonTag"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a class="button" href="./collectiveMonkey">
-                            <img
-                                src="./assets/Frontpage_Renders/Header/Small_images_M1_V01.png"
-                                alt="Navigate to collectiveMonkey"
-                                class="face"
-                                id="face3"
-                            />
-                            <img
-                                src="./assets/GeneralAssets/header_Cmonkey_V02.png"
-                                alt="Navigate to collectiveMonkey"
-                                class="buttonTag"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a class="button" href="./about/">
-                            <img
-                                src="./assets/Frontpage_Renders/Header/Small_images_Dani_V01.png"
-                                alt="Navigate to about"
-                                class="face"
-                                id="face4"
-                            />
-                            <img
-                                src="./assets/GeneralAssets/header_WDani_V02.png"
-                                alt="Navigate to about"
-                                class="buttonTag"
-                            />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <article class="introContainer">
-                <div class="profileImgContainer">
-                    <img
-                        id="profileImg"
-                        src="./assets/Frontpage_Renders/monkeyprofile_01_b_w2_optimized.png"
-                        alt="Picture of Danimonkey and his monkeys"
-                        width="100%"
-                    />
-                </div>
-
-                <div id="intro">
-                    <p>Hey there!</p>
-                    <p>
-                        It’s me, Danilo Sanchez, also known as DaniMonkey. I’m a
-                        seasoned storyboard artist, creative director, and
-                        animator who has contributed to Emmy-award winning shows
-                        such as Rick & Morty and Dragon Prince, and we, me and
-                        my team at Blumm Brand are the winner of the 2023 Lapiz
-                        de Acero Design Award in Animation in my home country of
-                        Colombia.
-                    </p>
-                    <p>
-                        This website is your gateway to my creative world that
-                        showcases my diverse portfolio.
-                    </p>
-                    <p>
-                        For access to my storyboard portfolio and inquiries
-                        about my locked portfolio, please contact me via the
-                        "Who is Dani" section or connect through my social media
-                        profiles. I’m just a message away.
-                    </p>
-                    <p>
-                        Enjoy your visit, and remember: don’t feed the monkeys!
-                    </p>
-
-                    <div class="video">
-                        <!-- <iframe
-              width="300px"
-              height="100%"
-              src=""
-              frameborder="1"
-              allowfullscreen
-            ></iframe> -->
-                        <video width="300" height="100%" controls>
-                            <source
-                                src="./assets/Frontpage_Renders/Who_is_Danimonkey_V05_Final (1).mp4"
-                                type="video/mp4"
-                            />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </article>
-        </header>
-        <main>
-            <section class="section" id="portfolio">
-                <div class="sectionHeader">
-                    <img
-                        src="./assets/Frontpage_Renders/Storybart_Frontpage_porfolio_header_v01.png"
-                        alt="Portfolio header"
-                        width="300px"
-                    />
-                </div>
-
-                <div class="projectsLinks">
-                    <a href="./animation">
-                        <img
-                            src="./assets/Frontpage_Renders/Portfolio__Frontpage_Animation_V01.png"
-                            alt="Navigate to animation"
-                            class="portfolioLink"
-                        />
-                    </a>
-                    <a href="./story-board">
-                        <img
-                            src="./assets/Frontpage_Renders/Portfolio__Frontpage_Storyboard_V01.png"
-                            alt="Navigate to storyboard"
-                            class="portfolioLink"
-                        />
-                    </a>
-                </div>
-            </section>
-            <section class="section" id="collective">
-                <div class="sectionHeader">
-                    <img
-                        src="./assets/Frontpage_Renders/Collectivemonkey_Middart_v01.png"
-                        alt="Collective monkey header"
-                        width="300px"
-                    />
-                </div>
-                <div class="collectiveLinks">
-                    <a href="./collectiveMonkey/index.html?project_id=3">
-                        <img
-                            src="./assets/Frontpage_Renders/Portfolio__Frontpage_Blum_02_Monkey_V01 AMAR(1).png"
-                            alt="Navigate to AMAR project"
-                            class="collectiveLink"
-                        />
-                    </a>
-                    <a href="./collectiveMonkey/index.html?project_id=2">
-                        <img
-                            src="./assets/Frontpage_Renders/Portfolio__Frontpage_Blum_01_Monkey_V01.png"
-                            alt="Navigate to Mendigo Ruido project"
-                            class="collectiveLink"
-                        />
-                    </a>
-                    <a href="./collectiveMonkey/index.html?project_id=1">
-                        <img
-                            src="./assets/Frontpage_Renders/Portfolio__Frontpage_librekas_01_Monkey_V01.png"
-                            alt="Navigate to Librekas project"
-                            class="collectiveLink"
-                        />
-                    </a>
-                </div>
+              </a>
+            </li>
+            <li>
+              <a class="button" href="./story-board">
                 <img
-                    src="./assets/GeneralAssets/monkeyprofile_04_v02_optimized.png"
-                    alt="Picture of Danimonkey and his monkeys"
-                    class="profilePicture"
+                  src="./assets/GeneralAssets/header_storybord_V02.png"
+                  alt="Navigate to storyboard"
                 />
-            </section>
-            <footer class="section" id="contact">
-                <div class="firstRow">
-                    <div>
-                        <h3>Danilo (DaniMonkey) Sanchez</h3>
-                        <p>
-                            Storyboarder // 2D animator// Independent director
-                        </p>
-                        <div class="contactInfo">
-                            <p>monkeytottem@gmail.com // +1(778)2329918</p>
-                        </div>
-                    </div>
-                    <div class="socialMedia">
-                        <a
-                            href="https://www.linkedin.com/in/danimonkey/"
-                            target="_blank"
-                            ><img
-                                src="./assets/GeneralAssets/footer_Linkedin_logos.png"
-                                alt="Navigate to Danimonkey's Linkedin"
-                        /></a>
-                        <a
-                            href="https://www.instagram.com/danimonkey_portfolio/"
-                            target="_blank"
-                            ><img
-                                src="./assets/GeneralAssets/footer_instagram_logos.png"
-                                alt="Navigate to Danimonkey's Instagram"
-                        /></a>
-                        <a href="https://vimeo.com/danimonkey" target="_blank"
-                            ><img
-                                src="./assets/GeneralAssets/footer_vimeo_logos.png"
-                                alt="Navigate to Danimonkey's Vimeo"
-                        /></a>
-                    </div>
-                </div>
-                <div class="secondRow">
-                    <h4>
-                        Website by
-                        <a href="http://jburbanof.com" target="_blank"
-                            >Julian Burbano</a
-                        >
-                        /Design by DaniMonkey
-                    </h4>
-                    <p style="font-size: 9px">
-                        Privacy Policy and terms of services // DaniMonkey 2024
-                        all rights reserved
-                    </p>
-                </div>
-            </footer>
-        </main>
-    </body>
+              </a>
+            </li>
+            <li>
+              <a class="button" href="./collectiveMonkey">
+                <img
+                  src="./assets/GeneralAssets/header_Cmonkey_V02.png"
+                  alt="Navigate to collective monkey"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="button" href="./art-gallery/">
+                <img
+                  src="./assets/GeneralAssets/header_Art_Gall_V02.png"
+                  alt="Navigate to art gallery"
+                />
+              </a>
+            </li>
+            <li>
+              <a class="button" href="./about/">
+                <img
+                  src="./assets/GeneralAssets/header_WDani_V02.png"
+                  alt="Navigate to about"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img
+          class="dmLogo"
+          src="./assets/GeneralAssets/Danimonkey_Logo_Black_trans_2025 (1).png"
+          alt="Danimonkey logo"
+        />
+
+        <ul class="navButtons">
+          <li>
+            <a class="button" href="./industrySB">
+              <img
+                src="./assets/Frontpage_Renders/Header/Small_images_M2_V01.png"
+                alt="Navigate to collectiveMonkey"
+                class="face"
+                id="face3"
+              />
+              <img
+                src="./assets/GeneralAssets/header_storybord_V03.png"
+                alt="Navigate to Storyboard industry "
+                class="buttonTag"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="button" href="./animation">
+              <img
+                src="./assets/Frontpage_Renders/Header/Small_images_M1_V01.png"
+                alt="Navigate to animation"
+                class="face"
+                id="face1"
+              />
+              <img
+                src="./assets/GeneralAssets/header_animation_V02.png"
+                alt="Navigate to animation"
+                class="buttonTag"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="button" href="./art-gallery/">
+              <img
+                src="./assets/Frontpage_Renders/Header/Small_images_M3_V01.png"
+                alt="Navigate to art-gallery"
+                class="face"
+                id="face5"
+              />
+              <img
+                src="./assets/GeneralAssets/header_Art_Gall_V02.png"
+                alt="Navigate to art-gallery"
+                class="buttonTag"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="button" href="./story-board">
+              <img
+                src="./assets/Frontpage_Renders/Header/Small_images_M2_V01.png"
+                alt="Navigate to storyboard"
+                class="face"
+                id="face2"
+              />
+              <img
+                src="./assets/GeneralAssets/header_storybord_V02.png"
+                alt="Navigate to storyboard"
+                class="buttonTag"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="button" href="./collectiveMonkey">
+              <img
+                src="./assets/Frontpage_Renders/Header/Small_images_M1_V01.png"
+                alt="Navigate to collectiveMonkey"
+                class="face"
+                id="face3"
+              />
+              <img
+                src="./assets/GeneralAssets/header_Cmonkey_V02.png"
+                alt="Navigate to collectiveMonkey"
+                class="buttonTag"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="button" href="./about/">
+              <img
+                src="./assets/Frontpage_Renders/Header/Small_images_Dani_V01.png"
+                alt="Navigate to about"
+                class="face"
+                id="face4"
+              />
+              <img
+                src="./assets/GeneralAssets/header_WDani_V02.png"
+                alt="Navigate to about"
+                class="buttonTag"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer class="section" id="contact">
+      <div class="firstRow">
+        <div>
+          <h3>Danilo (DaniMonkey) Sanchez</h3>
+          <p>Storyboarder // 2D animator// Independent director</p>
+          <div class="contactInfo">
+            <p>monkeytottem@gmail.com // +1(778)2329918</p>
+          </div>
+        </div>
+        <div class="socialMedia">
+          <a href="https://www.linkedin.com/in/danimonkey/" target="_blank"
+            ><img
+              src="./assets/GeneralAssets/footer_Linkedin_logos.png"
+              alt="Navigate to Danimonkey's Linkedin"
+          /></a>
+          <a
+            href="https://www.instagram.com/danimonkey_portfolio/"
+            target="_blank"
+            ><img
+              src="./assets/GeneralAssets/footer_instagram_logos.png"
+              alt="Navigate to Danimonkey's Instagram"
+          /></a>
+          <a href="https://vimeo.com/danimonkey" target="_blank"
+            ><img
+              src="./assets/GeneralAssets/footer_vimeo_logos.png"
+              alt="Navigate to Danimonkey's Vimeo"
+          /></a>
+        </div>
+      </div>
+      <div class="secondRow">
+        <h4>
+          Website by
+          <a href="http://jburbanof.com" target="_blank">Julian Burbano</a>
+          /Design by DaniMonkey
+        </h4>
+        <p style="font-size: 9px">
+          Privacy Policy and terms of services // DaniMonkey 2024 all rights
+          reserved
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
-<script type="text/javascript" src="./scripts.js"></script>
+<script type="text/javascript" src="../scripts.js"></script>

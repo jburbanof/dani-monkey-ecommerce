@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cousine", monospace;
+  color: #353533;
+}
+
+.container {
+  background-color: #dfe0e2;
+  background-image: url("../assets/Animation_Render/monkeyprofile_03_v02_optimized.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  overflow: hidden;
+}
+.container .sidePanel {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.container .sidePanel #navBar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.container .sidePanel #navBar #openResponsiveMenu {
+  display: none;
+}
+.container .sidePanel #navBar .responsiveMenu {
+  display: none;
+}
+.container .sidePanel #navBar .navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 40px;
+  flex-direction: column;
+}
+.container .sidePanel #navBar .navButtons .button {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  margin: 2px 0;
+}
+.container .sidePanel #navBar .navButtons .button img {
+  width: 175px;
+  margin: 0 5px;
+}
+.container .sidePanel a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/GeneralAssets/BG_yellow_Frontpage_01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content .sectionDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+}
+.content .sectionDescription p {
+  padding: 15px 40px;
+  font-size: 20px;
+}
+.content .header {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 40px;
+}
+.content .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .project .projectDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 150px;
+  padding: 20px;
+}
+.content .project .projectDescription .description {
+  background-image: url("../assets/CMonkey_render/Cmonkey_textBox_top_in_box_v02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 20px;
+  height: calc(100% - 40px);
+}
+.content .project iframe {
+  width: 90%;
+  max-width: 600px;
+  background-color: black;
+  margin: 40px 0;
+}
+.content .last {
+  margin-bottom: 250px;
+}
+
+#contact {
+  width: 100%;
+  background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .firstRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contact .firstRow .socialMedia img {
+  width: 50px;
+}
+#contact .secondRow {
+  font-size: 12px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .secondRow a {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .sidePanel {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .container .sidePanel #navBar {
+    flex-direction: row;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .container .sidePanel #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .sidePanel #navBar #openResponsiveMenu img {
+    width: 100px;
+  }
+  .container .sidePanel #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 4;
+  }
+  .container .sidePanel #navBar .responsiveMenu .navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+  }
+  .container .sidePanel #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+  .container .sidePanel #navBar .responsiveMenu .navButtons .button img {
+    width: 250px;
+    margin: 0 5px;
+  }
+  .container .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .container .sidePanel #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 100px;
+  }
+  .container .sidePanel #navBar .navButtons {
+    display: none;
+  }
+  .container .sidePanel a {
+    width: unset;
+  }
+  .content {
+    background-image: unset;
+  }
+  .content .project .projectDescription {
+    width: 70%;
+    flex-direction: column;
+    height: unset;
+  }
+  .content .project .projectDescription img {
+    width: 100%;
+  }
+  .content .last {
+    margin-bottom: 300px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .projectDescription {
+    flex-direction: column !important;
+    height: unset !important;
+  }
+}/*# sourceMappingURL=illustrationStyles.css.map */
