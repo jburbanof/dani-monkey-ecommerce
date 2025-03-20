@@ -3,106 +3,226 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Cousine", monospace;
-  color: #353533;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0, 0, 0));
 }
 
 body {
-  position: relative;
+  background-color: #0f1a1d;
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url("../assets/Frontpage_Renders/Background_transpapency_Danimonkey_v01.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
-.container {
-  background-color: #dfe0e2;
-  background-size: cover;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .project {
+  background-color: #0f1a1d;
   background-repeat: no-repeat;
-  background-position: center;
+  padding: 100px;
+  width: 40%;
+  text-align: left;
+}
+.content .project .description {
+  width: 65%; /* Ajusta el tamaño del video en relación al contenedor */
+  max-width: 750px; /* Evita que sean demasiado grandes */
+  margin: 20px auto; /* Centra los videos */
+  color: white;
+  margin-bottom: 20px;
+}
+.content .project .description h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #faea24;
+}
+.content .project .description h1 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #faea24;
+}
+.content .project .description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #faea24;
+}
+.content .project .vimeoPlayer {
+  width: 85%; /* Se adapta al tamaño del contenedor */
+  max-width: 1500px;
+  height: auto; /* Mantiene la proporción */
+  aspect-ratio: 16/9; /* Mantiene proporción de video */
+  margin: 10px auto;
+  text-align: right;
+}
+
+.section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#landing {
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  flex-direction: column;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: row;
-}
-.container .headerContainer {
-  background-size: 300px;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: row;
-}
-.container .headerContainer .contactInfo {
-  width: 100%;
-  display: flex;
-  justify-content: start;
   align-items: center;
   flex-direction: column;
 }
-.container .sidePanel {
-  height: 100%;
-  width: 350px;
+#landing #navBar {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-}
-.container .sidePanel a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container #navBar {
-  display: flex;
-  width: 100%;
+  width: 100vw;
+  padding: 15px 30px;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  flex-direction: column;
-  padding-top: 40px;
-  margin-bottom: 40px;
+  background-image: url("../assets/Animation_Render/Header/wide format_button_V01_Danimonkey_ColorY.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.container #openResponsiveMenu {
-  display: none;
+#landing #navBar .dmLogo {
+  width: 180px;
 }
-.container .responsiveMenu {
-  display: none;
-}
-.container .navButtons {
+#landing #navBar .navButtons {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  margin-top: 40px;
-  flex-direction: column;
-  padding: 0;
+  margin-top: 10px;
 }
-.container .navButtons .button {
+#landing #navBar .navButtons .button {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 150px;
+}
+#landing #navBar .navButtons .button img {
+  width: 150px;
+  margin: 0 5px;
+  z-index: 3;
+}
+#landing #navBar .navButtons .button .face {
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  transition: bottom 0.5s ease-out;
+}
+#landing #navBar #openResponsiveMenu {
+  display: none;
+}
+#landing #navBar .responsiveMenu {
+  display: none;
+}
+#landing .introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#landing .introContainer .profileImgContainer {
+  height: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: end;
-  flex-direction: column;
-  margin: 2px 0;
+  flex-direction: row;
 }
-.container .navButtons .button img {
-  width: 180px;
-  margin: 0 5px;
+#landing .introContainer .profileImgContainer img {
+  width: auto;
+  height: auto;
+  max-height: calc(100vh - 160px);
 }
-.container .profile p {
-  font-size: 20px;
-  padding: 15px 40px;
+#landing .introContainer #intro {
+  margin-left: 30px;
 }
-.container .header {
+#landing .introContainer #intro p {
+  margin: 10px;
+  font-size: 18px;
+}
+#landing .introContainer .video {
+  text-align: center;
+}
+
+#portfolio {
+  background-color: #828385;
+}
+#portfolio .sectionHeader {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  flex-direction: row;
+  background-color: #000000;
+}
+#portfolio .projectsLinks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#portfolio .projectsLinks .portfolioLink {
+  width: 400px;
+  margin: 50px;
+}
+
+#collective {
+  position: relative;
+  padding-bottom: 150px;
+}
+#collective .sectionHeader {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #000000;
+}
+#collective .sectionHeader img {
+  position: absolute;
+  top: 5px;
+  z-index: 1;
+}
+#collective .collectiveLinks {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 0;
+}
+#collective .collectiveLinks .collectiveLink {
+  width: 400px;
+}
+#collective .profilePicture {
+  width: 600px;
+  position: absolute;
+  bottom: 0;
 }
 
 #contact {
@@ -117,7 +237,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 #contact .firstRow {
   width: 100%;
@@ -132,14 +251,14 @@ body {
   align-items: center;
   flex-direction: row;
 }
-#contact .socialMedia {
+#contact .firstRow .socialMedia {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-#contact .socialMedia img {
+#contact .firstRow .socialMedia img {
   width: 50px;
 }
 #contact .secondRow {
@@ -154,55 +273,27 @@ body {
   color: black;
 }
 
-.reels {
-  display: flex;
-  align-items: start;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 70px;
-  margin-bottom: 50px;
-  background-image: url(../assets/Frontpage_Renders/BG__Frontpage_01.png);
-  background-size: calc(100% - 40px) calc(100% - 40px);
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 700px;
-}
-.reels .instagram-media {
-  max-width: 300px;
-  background: #fff;
-  border: 0;
-  border-radius: 3px;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
-  min-width: 326px;
-  padding: 0;
-  width: 99.375%;
-  width: calc(100% - 2px);
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    background-image: unset;
-    flex-direction: column;
+@media screen and (max-width: 1023px) {
+  * {
+    overflow-x: hidden;
   }
-  .container .headerContainer {
-    flex-direction: column;
-    background-image: unset;
-    width: 100%;
+  #landing {
+    height: unset;
+    padding: 0px;
+    justify-content: start;
   }
-  .container .headerContainer .sidePanel {
-    width: 100%;
-    padding: 0 20px;
+  #landing #navBar {
+    position: relative;
     box-sizing: border-box;
+    padding: 20px;
   }
-  .container .headerContainer .sidePanel #navBar {
-    flex-direction: row;
-    padding-top: 20px;
-    margin-bottom: 0;
+  #landing #navBar .dmLogo {
+    width: 180px;
   }
-  .container .headerContainer .sidePanel #navBar #openResponsiveMenu {
+  #landing #navBar .navButtons {
+    display: none;
+  }
+  #landing #navBar #openResponsiveMenu {
     display: unset;
     background: none;
     color: inherit;
@@ -212,10 +303,10 @@ body {
     cursor: pointer;
     outline: inherit;
   }
-  .container .headerContainer .sidePanel #navBar #openResponsiveMenu img {
+  #landing #navBar #openResponsiveMenu img {
     width: 100px;
   }
-  .container .headerContainer .sidePanel #navBar .responsiveMenu {
+  #landing #navBar .responsiveMenu {
     position: fixed;
     left: 0;
     right: 0;
@@ -228,9 +319,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 4;
+    z-index: 5;
   }
-  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons {
+  #landing #navBar .responsiveMenu .navButtons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,20 +329,23 @@ body {
     list-style-type: none;
     margin-top: 40px;
   }
-  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons .button {
+  #landing #navBar .responsiveMenu .navButtons li {
+    overflow: hidden;
+  }
+  #landing #navBar .responsiveMenu .navButtons .button {
     margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: end;
     flex-direction: column;
   }
-  .container .headerContainer .sidePanel #navBar .responsiveMenu .navButtons .button img {
-    width: 250px;
+  #landing #navBar .responsiveMenu .navButtons .button img {
+    width: 250px !important;
     margin: 0 5px;
   }
-  .container .headerContainer .sidePanel #navBar .responsiveMenu #closeResponsiveMenu {
+  #landing #navBar .responsiveMenu #closeResponsiveMenu {
     position: absolute;
-    top: 24px;
+    top: 28px;
     left: 20px;
     display: unset;
     background: none;
@@ -262,17 +356,65 @@ body {
     cursor: pointer;
     outline: inherit;
   }
-  .container .headerContainer .sidePanel #navBar .responsiveMenu #closeResponsiveMenu img {
+  #landing #navBar .responsiveMenu #closeResponsiveMenu img {
     width: 100px;
   }
-  .container .headerContainer .sidePanel #navBar .navButtons {
-    display: none;
+  #landing .introContainer {
+    flex-direction: column;
   }
-  .container .headerContainer .sidePanel a {
-    width: unset;
+  #landing .introContainer .profileImgContainer {
+    width: 80%;
   }
-  .container .headerContainer .contactInfo .getInContact {
-    width: 95%;
-    margin-bottom:  40px;
+  #landing .introContainer #intro {
+    width: 100%;
+    margin-left: unset;
+    padding: 0 50px;
+    box-sizing: border-box;
+    border-top: 20px solid black;
+  }
+  #portfolio .projectsLinks .portfolioLink {
+    width: 300px;
+    margin: 50px;
+  }
+  #collective {
+    position: relative;
+    padding-bottom: 250px;
+  }
+  #collective .sectionHeader {
+    overflow-x: unset;
+    z-index: 4;
+  }
+  #collective .collectiveLinks {
+    margin-top: 90px;
+    /* display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 50px; */
+    z-index: 3;
+  }
+  #collective .collectiveLinks .collectiveLink {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #collective .profilePicture {
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #landing {
+    padding: 0;
+  }
+  #landing .dmLogo {
+    width: 180px !important;
+  }
+  #landing .button img {
+    width: 130px !important;
+  }
+  #landing .introContainer #intro p {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=brandingStyles.css.map */
