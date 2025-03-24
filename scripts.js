@@ -23,7 +23,7 @@ videos.forEach((video) => {
 
 const hoverAnimation = (element, gap, imgHeight, img) => {
 	element.addEventListener("mouseover", () => {
-		img.style.bottom = `calc(${gap} - 2px)`;
+		img.style.bottom = `calc(${gap} - 3px)`;
 	});
 	element.addEventListener("mouseout", () => {
 		img.style.bottom = `calc( -${gap} - ${imgHeight} )`;

@@ -16,11 +16,14 @@ svg {
 body {
   background-color: $background-color;
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100vh;
   background-image: url("../assets/Frontpage_Renders/Background_transpapency_Danimonkey_v01.png");
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .content {
   display: flex;
@@ -30,29 +33,38 @@ body {
 
   .project {
     
-    width: 40%; // Ajustar según el diseño
-    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .description {
-      width: 65%; /* Ajusta el tamaño del video en relación al contenedor */
+      width: 70%; /* Ajusta el tamaño del video en relación al contenedor */
       max-width: 750px; /* Evita que sean demasiado grandes */
-      
-      color: white;
-      margin-bottom: 20px;
-
-      h2 {
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        width: 100%;
         font-size: 2rem;
         margin-bottom: 10px;
         color: $details-color; // Color amarillo como en la imagen
       }
 
-      h1 {
+      h2 {
+        width: 100%;
         font-size: 1.5rem;
         margin-top: 20px;
+        margin-bottom: 10px;
         color: $details-color; // Color amarillo para los títulos
       }
 
       p {
+        width: 100%;
+
         text-align: left;
         font-size: 1rem;
         line-height: 1.5;
@@ -93,6 +105,7 @@ body {
     padding: 15px 30px;
     align-items: center;
     justify-content: start;
+    align-items: flex-end;
     box-sizing: border-box;
     gap: 20px;
     background-color:$details-color;
@@ -100,9 +113,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    .dmLogo {
-      width: 180px;
-    }
     .navButtons {
       display: flex;
       justify-content: center;
@@ -117,7 +127,7 @@ body {
         align-items: center;
         flex-direction: column;
         position: relative;
-        height: 150px;
+        height: 112px;
         width: 150px;
         margin: 0 5px;
         z-index: 3;
@@ -131,14 +141,15 @@ body {
           z-index: 2;
           position: absolute;
           transition: bottom 0.5s ease-out;
+          width: 100px;
         }
         .buttonTag{
           
           display:inline-flex;
           justify-content: center;
           align-items: center;
-          width: 160px;
-          height:35px;
+          width: 135px;
+          height:25px;
           cursor: pointer;
           background-color: $background-color;
           color: $details-color;
@@ -146,7 +157,6 @@ body {
           font-weight: bold;
           text-transform: uppercase;
           text-decoration: none;
-          border-radius: 8px;
           border:none;
           padding: 10px 20px;
           position:absolute;
@@ -162,96 +172,9 @@ body {
       display: none;
     }
   }
-  .introContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    .profileImgContainer {
-      height: 100%;
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-      flex-direction: row;
-      img {
-        width: auto;
-        height: auto;
-        max-height: calc(100vh - 160px);
-      }
-    }
-    #intro {
-      margin-left: 30px;
-      p {
-        margin: 10px;
-        font-size: 18px;
-      }
-    }
-    .video {
-      text-align: center;
-    }
-  }
+  
 }
-#portfolio {
-  background-color: #828385;
-  .sectionHeader {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #000000;
-  }
-  .projectsLinks {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-    .portfolioLink {
-      width: 400px;
-      margin: 50px;
-    }
-  }
-}
-#collective {
-  position: relative;
-  padding-bottom: 150px;
-  .sectionHeader {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #000000;
-    img {
-      position: absolute;
-      top: 5px;
-      z-index: 1;
-    }
-  }
-  .collectiveLinks {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    z-index: 0;
-    .collectiveLink {
-      width: 400px;
-    }
-  }
-  .profilePicture {
-    width: 600px;
-    position: absolute;
-    bottom: 0;
-  }
-}
 #contact {
   width: 100%;
   background-image: url("../assets/Frontpage_Renders/Button_V02.png");
@@ -264,6 +187,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: auto;
   .firstRow {
     width: 100%;
     display: flex;
@@ -289,7 +213,7 @@ body {
   }
   .secondRow {
     font-size: 12px;
-    margin-top: 100px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,23 +359,4 @@ body {
     }
   }
 }
-@media screen and (max-width: 1200px) {
-  #landing {
-    padding: 0;
-    .dmLogo {
-      width: 180px !important;
-    }
-    .button {
-      img {
-        width: 130px !important;
-      }
-    }
-    .introContainer {
-      #intro {
-        p {
-          font-size: 15px;
-        }
-      }
-    }
-  }
-}
+
