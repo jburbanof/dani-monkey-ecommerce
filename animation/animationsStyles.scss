@@ -36,6 +36,7 @@ body {
     .description {
       width: 65%; /* Ajusta el tamaño del video en relación al contenedor */
       max-width: 750px; /* Evita que sean demasiado grandes */
+      
       color: white;
       margin-bottom: 20px;
 
@@ -91,9 +92,10 @@ body {
     width: 100vw;
     padding: 15px 30px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     box-sizing: border-box;
-    background-image: url("../assets/Animation_Render/Header/wide format_button_V01_Danimonkey_ColorY.png");
+    gap: 20px;
+    background-color:$details-color;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,6 +110,7 @@ body {
       list-style-type: none;
       margin-top: 10px;
       .button {
+        
         overflow: hidden;
         display: flex;
         justify-content: flex-end;
@@ -115,6 +118,9 @@ body {
         flex-direction: column;
         position: relative;
         height: 150px;
+        width: 150px;
+        margin: 0 5px;
+        z-index: 3;
         img {
           width: 150px;
           margin: 0 5px;
@@ -125,6 +131,27 @@ body {
           z-index: 2;
           position: absolute;
           transition: bottom 0.5s ease-out;
+        }
+        .buttonTag{
+          
+          display:inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 160px;
+          height:35px;
+          cursor: pointer;
+          background-color: $background-color;
+          color: $details-color;
+          font-size: 18px;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-decoration: none;
+          border-radius: 8px;
+          border:none;
+          padding: 10px 20px;
+          position:absolute;
+          z-index:4;
+          
         }
       }
     }

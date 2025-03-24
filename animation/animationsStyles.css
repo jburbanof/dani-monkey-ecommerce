@@ -88,9 +88,10 @@ body {
   width: 100vw;
   padding: 15px 30px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   box-sizing: border-box;
-  background-image: url("../assets/Animation_Render/Header/wide format_button_V01_Danimonkey_ColorY.png");
+  gap: 20px;
+  background-color: #faea24;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,6 +114,9 @@ body {
   flex-direction: column;
   position: relative;
   height: 150px;
+  width: 150px;
+  margin: 0 5px;
+  z-index: 3;
 }
 #landing #navBar .navButtons .button img {
   width: 150px;
@@ -124,6 +128,25 @@ body {
   z-index: 2;
   position: absolute;
   transition: bottom 0.5s ease-out;
+}
+#landing #navBar .navButtons .button .buttonTag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #0f1a1d;
+  color: #faea24;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 4;
 }
 #landing #navBar #openResponsiveMenu {
   display: none;
