@@ -18,6 +18,7 @@ videos.forEach((video) => {
 	video.style.height = `calc(${videoWidth} * 0.5625)`;
 	window.addEventListener("resize", () => {
 		video.style.height = `calc(${videoWidth} * 0.5625)`;
+		
 	});
 });
 
