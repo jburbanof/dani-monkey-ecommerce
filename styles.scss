@@ -17,7 +17,7 @@ body {
   background-color: $background-color;
   overflow-x: hidden;
   min-height: 100vh;
-  background-image: url('../assets/Frontpage_Renders/Background_transpapency_Danimonkey_v01.png');
+  background-image: url('./assets/Frontpage_Renders/Background_transpapency_Danimonkey_v01.png');
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
@@ -324,7 +324,7 @@ body {
 
 #contact {
   width: 100%;
-  background-image: url('../assets/Frontpage_Renders/Button_V02.png');
+  background-image: url('./assets/Frontpage_Renders/Button_V02.png');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;

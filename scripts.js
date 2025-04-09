@@ -47,16 +47,17 @@ const getFaceStyles = face => {
   return { imgHeight, gap, buttonTag };
 };
 const defaultFace = () => {
-  const { gap, imgHeight } = getFaceStyles(currentPath);
-  currentPath.style.visibility = 'unset';
-  currentPath.style.bottom = `calc( -${gap} - ${imgHeight} )`;
-  currentPath.style.bottom = `calc(${gap} - 3px)`;
+  if (currentPath) {
+    const { gap, imgHeight } = getFaceStyles(currentPath);
+    currentPath.style.visibility = 'unset';
+    currentPath.style.bottom = `calc( -${gap} - ${imgHeight} )`;
+    currentPath.style.bottom = `calc(${gap} - 3px)`;
+  }
 };
 window.addEventListener('load', () => {
   defaultFace();
   faces.forEach(face => {
-    console.log(currentPath.id);
-    if (face.id != currentPath.id) {
+    if (face.id != currentPath?.id) {
       const { gap, imgHeight, buttonTag } = getFaceStyles(face);
       face.style.visibility = 'unset';
       face.style.bottom = `calc( -${gap} - ${imgHeight} )`;
