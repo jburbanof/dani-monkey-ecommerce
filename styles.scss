@@ -1,4 +1,4 @@
-$details-color: #faea24;
+$details-color: #faeb2c;
 $background-color: #0f1a1d;
 @import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
 * {
@@ -37,73 +37,177 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .videoIntro {
+      top: 0;
+      left: 0;
+      width: 100%;
+      video {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+      }
 
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha for more or less gray */
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .introContent {
+          width: 60%;
+          min-width: 350px;
+          text-align: left;
+          h1 {
+            color: $details-color;
+            font-weight: bold;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+    }
     .description {
-      width: 70%; /* Ajusta el tamaño del video en relación al contenedor */
-      max-width: 750px; /* Evita que sean demasiado grandes */
-      margin: 10px;
+      width: 70%;
+      max-width: 750px;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      h1 {
-        width: 100%;
-        font-size: 2rem;
-        margin-bottom: 10px;
-        color: $details-color; // Color amarillo como en la imagen
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+      img {
+        width: 50%;
+        min-width: 250px;
       }
-
-      h2 {
-        width: 100%;
-        font-size: 1.5rem;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        color: $details-color; // Color amarillo para los títulos
+      .descriptionContent {
+        width: 50%;
+        h2 {
+          color: $details-color;
+          font-weight: bold;
+        }
+        h3 {
+          color: white;
+          font-weight: bold;
+          margin: 10px 0;
+        }
+        p {
+          color: white;
+        }
       }
-
-      p {
-        width: 100%;
-
-        text-align: left;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: $details-color;
-      }
-    }
-
-    .vimeoPlayer {
-      width: 85%; /* Se adapta al tamaño del contenedor */
-      max-width: 1500px;
-      height: auto; /* Mantiene la proporción */
-      aspect-ratio: 16 / 9; /* Mantiene proporción de video */
-      margin: 10px auto;
-      text-align: right;
     }
   }
-  .specialities {
-    background-color: $details-color;
-    overflow-x: hidden;
-    background-position: center;
-    background-repeat: no-repeat;
+  .specialties {
+    background-color: #f5e44e;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 100%;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
+    h2 {
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      font-size: 33px;
+      padding: 5px 0;
+    }
+    .buttonsContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      gap: 35px;
+      a:link {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      a:active {
+        text-decoration: none;
+      }
+      .links {
+        h4 {
+          text-decoration: none;
+          font-weight: bold;
+          color: white;
+          margin-bottom: 10px;
+          font-size: 22px;
+        }
+        .square {
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        .square:hover,
+        .square:focus,
+        .square:active {
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          transform: scale(1.01);
+        }
+      }
+    }
   }
 }
-
-.section {
+.flags {
+  width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  img {
+    width: 100%;
+  }
+  p {
+    width: 65%;
+    color: white;
+    margin: 50px 0;
+  }
+}
+.experience {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  .yellowSpacer {
+    height: 20px;
+    width: 100%;
+    background-color: $details-color;
+  }
+
+  .experienceIcons {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 #landing {
   width: 100%;
   height: 100%;
-  padding: 0 50px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -111,15 +215,16 @@ body {
   flex-direction: column;
 
   #navBar {
+    position: absolute;
     display: flex;
-    width: 100vw;
+    width: 100%;
     padding: 15px 30px;
     align-items: center;
     justify-content: start;
     align-items: flex-end;
     box-sizing: border-box;
     gap: 20px;
-    background-color: $details-color;
+    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,6 +235,7 @@ body {
       align-items: center;
       list-style-type: none;
       margin-top: 10px;
+
       .button {
         overflow: hidden;
         display: flex;
@@ -153,24 +259,23 @@ body {
           transition: bottom 0.5s ease-out;
           width: 100px;
         }
-        .buttonTag {
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          width: 135px;
-          height: 25px;
-          cursor: pointer;
-          background-color: $background-color;
-          color: $details-color;
-          font-size: 18px;
-          font-weight: bold;
-          text-transform: uppercase;
-          text-decoration: none;
-          border: none;
-          padding: 10px 20px;
-          position: absolute;
-          z-index: 4;
-        }
+      }
+      .buttonTag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 135px;
+        height: 25px;
+        cursor: pointer;
+        background-color: $background-color;
+        color: $details-color;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        padding: 10px 20px;
+        z-index: 4;
       }
     }
     #openResponsiveMenu {
@@ -240,9 +345,10 @@ body {
     padding: 0px;
     justify-content: start;
     #navBar {
-      position: relative;
       box-sizing: border-box;
       padding: 20px;
+      z-index: 3;
+      justify-content: space-between;
       .dmLogo {
         width: 180px;
       }
@@ -283,19 +389,13 @@ body {
           flex-direction: column;
           list-style-type: none;
           margin-top: 40px;
-          li {
-            overflow: hidden;
-          }
+          gap: 10px;
           .button {
             margin: 20px 0;
             display: flex;
             justify-content: center;
             align-items: end;
             flex-direction: column;
-            img {
-              width: 250px !important;
-              margin: 0 5px;
-            }
           }
         }
         #closeResponsiveMenu {

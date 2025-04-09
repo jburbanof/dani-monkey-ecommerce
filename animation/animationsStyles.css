@@ -141,8 +141,8 @@ body {
   transition: bottom 0.5s ease-out;
   width: 100px;
 }
-#landing #navBar .navButtons .button .buttonTag {
-  display: inline-flex;
+#landing #navBar .navButtons .buttonTag {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 135px;
@@ -156,7 +156,6 @@ body {
   text-decoration: none;
   border: none;
   padding: 10px 20px;
-  position: absolute;
   z-index: 4;
 }
 #landing #navBar #openResponsiveMenu {
@@ -228,6 +227,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding: 20px;
+    justify-content: space-between;
   }
   #landing #navBar .dmLogo {
     width: 180px;
@@ -270,9 +270,7 @@ body {
     flex-direction: column;
     list-style-type: none;
     margin-top: 40px;
-  }
-  #landing #navBar .responsiveMenu .navButtons li {
-    overflow: hidden;
+    gap: 10px;
   }
   #landing #navBar .responsiveMenu .navButtons .button {
     margin: 20px 0;
@@ -280,10 +278,6 @@ body {
     justify-content: center;
     align-items: end;
     flex-direction: column;
-  }
-  #landing #navBar .responsiveMenu .navButtons .button img {
-    width: 250px !important;
-    margin: 0 5px;
   }
   #landing #navBar .responsiveMenu #closeResponsiveMenu {
     position: absolute;

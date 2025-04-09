@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
 * {
   margin: 0;
@@ -34,65 +33,56 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.content .project {
-  width: 100%;
+.content .formContainer {
+  margin: 30px 0;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-.content .project .description {
-  width: 70%; /* Ajusta el tamaño del video en relación al contenedor */
-  max-width: 750px; /* Evita que sean demasiado grandes */
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.content .project .description h1 {
-  width: 100%;
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #faea24;
-}
-.content .project .description img {
-  position: relative;
-  left: -150px;
-}
-.content .project .description h2 {
-  width: 100%;
-  font-size: 1.5rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #faea24;
-}
-.content .project .description p {
-  width: 100%;
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #faea24;
-}
-.content .project .specialities {
-  background-color: #faea24;
-  display: flex;
-  width: 100%;
-  justify-content: center;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+}
+.content .formContainer img {
+  width: 250px;
+}
+.content .formContainer .textSide {
+  width: 60%;
+  min-width: 400px;
+}
+.content .formContainer .textSide h1 {
   color: #faea24;
 }
-.content .project .specialities .Square {
-  background-color: #faea24;
+.content .formContainer .textSide p {
+  color: #faea24;
 }
-.content .project .vimeoPlayer {
-  width: 85%; /* Se adapta al tamaño del contenedor */
-  max-width: 1500px;
-  height: auto; /* Mantiene la proporción */
-  aspect-ratio: 16/9; /* Mantiene proporción de video */
-  margin: 10px auto;
-  text-align: right;
+.content .formContainer .textSide .contactForm {
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content .formContainer .textSide .contactForm input,
+.content .formContainer .textSide .contactForm textarea,
+.content .formContainer .textSide .contactForm button {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.content .formContainer .textSide .contactForm textarea {
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 250px;
+  min-height: 100px;
+}
+.content .formContainer .textSide .contactForm #submit {
+  cursor: pointer;
+  border: none;
+  background-color: #faea24;
 }
 
 .section {
@@ -157,8 +147,8 @@ body {
   transition: bottom 0.5s ease-out;
   width: 100px;
 }
-#landing #navBar .navButtons .button .buttonTag {
-  display: inline-flex;
+#landing #navBar .navButtons .buttonTag {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 135px;
@@ -172,7 +162,6 @@ body {
   text-decoration: none;
   border: none;
   padding: 10px 20px;
-  position: absolute;
   z-index: 4;
 }
 #landing #navBar #openResponsiveMenu {
@@ -180,36 +169,6 @@ body {
 }
 #landing #navBar .responsiveMenu {
   display: none;
-}
-
-.contactForm {
-  background-color: rgb(49, 49, 49);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 10px;
-}
-.contactForm input,
-.contactForm textarea,
-.contactForm button {
-  width: 80%;
-  margin-bottom: 20px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 25px;
-}
-.contactForm textarea {
-  max-width: 80%;
-  min-width: 80%;
-  max-height: 250px;
-  min-height: 100px;
-}
-.contactForm #submit {
-  cursor: pointer;
-  border: none;
-  background-color: #faea24;
 }
 
 #contact {
@@ -313,6 +272,7 @@ body {
     position: relative;
     box-sizing: border-box;
     padding: 20px;
+    justify-content: space-between;
   }
   #landing #navBar .dmLogo {
     width: 180px;
@@ -355,9 +315,7 @@ body {
     flex-direction: column;
     list-style-type: none;
     margin-top: 40px;
-  }
-  #landing #navBar .responsiveMenu .navButtons li {
-    overflow: hidden;
+    gap: 10px;
   }
   #landing #navBar .responsiveMenu .navButtons .button {
     margin: 20px 0;
@@ -365,10 +323,6 @@ body {
     justify-content: center;
     align-items: end;
     flex-direction: column;
-  }
-  #landing #navBar .responsiveMenu .navButtons .button img {
-    width: 250px !important;
-    margin: 0 5px;
   }
   #landing #navBar .responsiveMenu #closeResponsiveMenu {
     position: absolute;
