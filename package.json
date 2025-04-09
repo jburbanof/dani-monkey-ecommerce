@@ -1,14 +1,14 @@
 {
-  "name": "dani-monkey",
+  "name": "dani-monkey-ecommerce",
   "version": "1.0.0",
-  "description": "Dani monkey portfolio",
+  "description": "Dani monkey e-commerce",
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jburbanof/dani-monkey.git"
+    "url": "git+https://github.com/Dvilladag/dani-monkey-ecommerce.git"
   },
   "keywords": [
     "Portfolio",
@@ -18,10 +18,10 @@
     "Collective",
     "monkey"
   ],
-  "author": "Danilo Sanchez, Julian Burbano",
+  "author": "Danilo Sanchez, Julian Burbano, Daniela Villada",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jburbanof/dani-monkey/issues"
   },
-  "homepage": "https://github.com/jburbanof/dani-monkey#readme"
+  "homepage": "https://dvilladag.github.io/dani-monkey-ecommerce/"
 }
