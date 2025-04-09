@@ -80,7 +80,7 @@ body {
   color: white;
 }
 .content .project .description {
-  width: 70%;
+  width: 75%;
   max-width: 750px;
   display: flex;
   justify-content: center;
@@ -94,6 +94,7 @@ body {
 }
 .content .project .description .descriptionContent {
   width: 50%;
+  min-width: 300px;
 }
 .content .project .description .descriptionContent h2 {
   color: #faeb2c;
@@ -200,6 +201,41 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.achievements h2 {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 33px;
+  padding: 5px 0;
+}
+.achievements .content {
+  margin: 30px 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.achievements .content img {
+  width: 200px;
+}
+.achievements .content .text {
+  width: 60%;
+  min-width: 300px;
+}
+.achievements .content .text p {
+  color: white;
+  margin: 10px 0;
 }
 
 #landing {
