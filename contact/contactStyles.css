@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cousine", monospace;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0, 0, 0));
+}
+
+body {
+  background-color: #0f1a1d;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-image: url("../assets/Frontpage_Renders/Background_transpapency_Danimonkey_v01.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .formContainer {
+  margin: 30px 0;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.content .formContainer img {
+  width: 250px;
+}
+.content .formContainer .textSide {
+  max-width: 500px;
+}
+.content .formContainer .textSide h1 {
+  color: #faea24;
+}
+.content .formContainer .textSide p {
+  color: #faea24;
+}
+.content .formContainer .textSide .contactForm {
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content .formContainer .textSide .contactForm input,
+.content .formContainer .textSide .contactForm textarea,
+.content .formContainer .textSide .contactForm button {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.content .formContainer .textSide .contactForm textarea {
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 250px;
+  min-height: 100px;
+}
+.content .formContainer .textSide .contactForm #submit {
+  cursor: pointer;
+  border: none;
+  background-color: #faea24;
+}
+
+.section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#landing {
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#landing #navBar {
+  display: flex;
+  width: 100vw;
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: start;
+  align-items: flex-end;
+  box-sizing: border-box;
+  gap: 20px;
+  background-color: #faea24;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#landing #navBar .navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 10px;
+}
+#landing #navBar .navButtons .button {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 112px;
+  width: 150px;
+  margin: 0 5px;
+  z-index: 3;
+}
+#landing #navBar .navButtons .button img {
+  width: 150px;
+  margin: 0 5px;
+  z-index: 3;
+}
+#landing #navBar .navButtons .button .face {
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  transition: bottom 0.5s ease-out;
+  width: 100px;
+}
+#landing #navBar .navButtons .buttonTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 25px;
+  cursor: pointer;
+  background-color: #0f1a1d;
+  color: #faea24;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  z-index: 4;
+}
+#landing #navBar #openResponsiveMenu {
+  display: none;
+}
+#landing #navBar .responsiveMenu {
+  display: none;
+}
+
+#contact {
+  width: 100%;
+  background-image: url("../assets/Frontpage_Renders/Button_V02.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: auto;
+}
+#contact .firstRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contact .firstRow .socialMedia img {
+  width: 50px;
+}
+#contact .firstRow .contactWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* para que sea responsive */
+  gap: 40px;
+  padding: 40px;
+}
+#contact .firstRow .imageArea {
+  flex: 1;
+  max-width: 500px;
+}
+#contact .firstRow .imageArea img {
+  width: 100%;
+  height: auto;
+}
+#contact .firstRow .formArea {
+  flex: 1;
+  max-width: 400px;
+}
+#contact .firstRow .contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact .firstRow .contactForm input,
+#contact .firstRow .contactForm textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+#contact .firstRow .contactForm button {
+  background-color: yellow;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#contact .secondRow {
+  font-size: 12px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .secondRow a {
+  color: black;
+}
+
+@media screen and (max-width: 1023px) {
+  * {
+    overflow-x: hidden;
+  }
+  #landing {
+    height: unset;
+    padding: 0px;
+    justify-content: start;
+  }
+  #landing #navBar {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #landing #navBar .dmLogo {
+    width: 100px;
+  }
+  #landing #navBar .navButtons {
+    display: none;
+  }
+  #landing #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar #openResponsiveMenu img {
+    width: 70px;
+  }
+  #landing #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+  }
+  #landing #navBar .responsiveMenu .navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+    gap: 10px;
+  }
+  #landing #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 70px;
+  }
+  #landing .introContainer {
+    flex-direction: column;
+  }
+  #landing .introContainer .profileImgContainer {
+    width: 80%;
+  }
+  #landing .introContainer #intro {
+    width: 100%;
+    margin-left: unset;
+    padding: 0 50px;
+    box-sizing: border-box;
+    border-top: 20px solid black;
+  }
+  #portfolio .projectsLinks .portfolioLink {
+    width: 300px;
+    margin: 50px;
+  }
+  #collective {
+    position: relative;
+    padding-bottom: 250px;
+  }
+  #collective .sectionHeader {
+    overflow-x: unset;
+    z-index: 4;
+  }
+  #collective .collectiveLinks {
+    margin-top: 90px;
+    /* display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 50px; */
+    z-index: 3;
+  }
+  #collective .collectiveLinks .collectiveLink {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #collective .profilePicture {
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=contactStyles.css.map */

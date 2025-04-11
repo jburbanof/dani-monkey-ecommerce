@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cousine", monospace;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0, 0, 0));
+}
+
+body {
+  background-color: #0f1a1d;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-image: url("./assets/Frontpage_Renders/Background_transpapency_Danimonkey_v01.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .project .videoIntro {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.content .project .videoIntro #loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.content .project .videoIntro #loader img {
+  width: 150px;
+  border: 10px solid #faeb2c;
+}
+.content .project .videoIntro video {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.content .project .videoIntro .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha for more or less gray */
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .project .videoIntro .overlay .introContent {
+  width: 60%;
+  min-width: 350px;
+  text-align: left;
+}
+.content .project .videoIntro .overlay .introContent h1 {
+  color: #faeb2c;
+  font-weight: bold;
+}
+.content .project .videoIntro .overlay .introContent p {
+  color: white;
+}
+.content .project .description {
+  width: 75%;
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+.content .project .description img {
+  width: 50%;
+  min-width: 250px;
+  max-width: 300px;
+}
+.content .project .description .descriptionContent {
+  max-width: 450px;
+}
+.content .project .description .descriptionContent h2 {
+  color: #faeb2c;
+  font-weight: bold;
+}
+.content .project .description .descriptionContent h3 {
+  color: white;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.content .project .description .descriptionContent p {
+  color: white;
+}
+.content .specialties {
+  background-color: #f5e44e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .specialties h2 {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 33px;
+  padding: 5px 0;
+}
+.content .specialties .buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 35px;
+}
+.content .specialties .buttonsContainer a:link {
+  text-decoration: none;
+}
+.content .specialties .buttonsContainer a:visited {
+  text-decoration: none;
+}
+.content .specialties .buttonsContainer a:hover {
+  text-decoration: none;
+}
+.content .specialties .buttonsContainer a:active {
+  text-decoration: none;
+}
+.content .specialties .buttonsContainer .links h4 {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.content .specialties .buttonsContainer .links .square {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.content .specialties .buttonsContainer .links .square:hover,
+.content .specialties .buttonsContainer .links .square:focus,
+.content .specialties .buttonsContainer .links .square:active {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transform: scale(1.01);
+}
+
+.flags {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flags img {
+  width: 100%;
+}
+.flags p {
+  width: 65%;
+  color: white;
+  margin: 50px 0;
+}
+
+.experience {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.experience .yellowSpacer {
+  height: 20px;
+  width: 100%;
+  background-color: #faeb2c;
+}
+.experience .experienceIcons {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 750px;
+}
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.achievements h2 {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 33px;
+  padding: 5px 0;
+}
+.achievements .content {
+  margin: 30px 0;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+.achievements .content img {
+  width: 200px;
+}
+.achievements .content .text {
+  max-width: 450px;
+}
+.achievements .content .text p {
+  color: white;
+  margin: 10px 0;
+}
+
+#landing {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#landing #navBar {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: start;
+  align-items: flex-end;
+  box-sizing: border-box;
+  gap: 20px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#landing #navBar .navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 10px;
+}
+#landing #navBar .navButtons .button {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 112px;
+  width: 150px;
+  margin: 0 5px;
+  z-index: 3;
+}
+#landing #navBar .navButtons .button img {
+  width: 150px;
+  margin: 0 5px;
+  z-index: 3;
+}
+#landing #navBar .navButtons .button .face {
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  transition: bottom 0.5s ease-out;
+  width: 100px;
+}
+#landing #navBar .navButtons .buttonTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 25px;
+  cursor: pointer;
+  background-color: #0f1a1d;
+  color: #faeb2c;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  z-index: 4;
+}
+#landing #navBar #openResponsiveMenu {
+  display: none;
+}
+#landing #navBar .responsiveMenu {
+  display: none;
+}
+
+#contact {
+  width: 100%;
+  background-image: url("./assets/Frontpage_Renders/Button_V02.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: auto;
+}
+#contact .firstRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .contactInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#contact .firstRow .socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contact .firstRow .socialMedia img {
+  width: 50px;
+}
+#contact .secondRow {
+  font-size: 12px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .secondRow a {
+  color: black;
+}
+
+@media screen and (max-width: 1023px) {
+  * {
+    overflow-x: hidden;
+  }
+  #landing {
+    height: unset;
+    padding: 0px;
+    justify-content: start;
+  }
+  #landing #navBar {
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #landing #navBar .dmLogo {
+    width: 100px;
+    z-index: 5;
+  }
+  #landing #navBar .navButtons {
+    display: none;
+  }
+  #landing #navBar #openResponsiveMenu {
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar #openResponsiveMenu img {
+    width: 70px;
+  }
+  #landing #navBar .responsiveMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dfe0e2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+  }
+  #landing #navBar .responsiveMenu .navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 40px;
+    gap: 10px;
+  }
+  #landing #navBar .responsiveMenu .navButtons .button {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    display: unset;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  #landing #navBar .responsiveMenu #closeResponsiveMenu img {
+    width: 70px;
+  }
+  #landing .introContainer {
+    flex-direction: column;
+  }
+  #landing .introContainer .profileImgContainer {
+    width: 80%;
+  }
+  #landing .introContainer #intro {
+    width: 100%;
+    margin-left: unset;
+    padding: 0 50px;
+    box-sizing: border-box;
+    border-top: 20px solid black;
+  }
+  #portfolio .projectsLinks .portfolioLink {
+    width: 300px;
+    margin: 50px;
+  }
+  #collective {
+    position: relative;
+    padding-bottom: 250px;
+  }
+  #collective .sectionHeader {
+    overflow-x: unset;
+    z-index: 4;
+  }
+  #collective .collectiveLinks {
+    margin-top: 90px;
+    /* display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 50px; */
+    z-index: 3;
+  }
+  #collective .collectiveLinks .collectiveLink {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #collective .profilePicture {
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
