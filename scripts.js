@@ -31,6 +31,7 @@ videos?.forEach(video => {
 });
 
 mainVideo?.addEventListener('canplaythrough', () => {
+  mainVideo.play();
   setTimeout(() => {
     loader.style.display = 'none';
   }, 100);
