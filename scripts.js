@@ -13,7 +13,8 @@ const paths = {
   branding: faces[2],
   contact: faces[3],
 };
-const currentPath = paths[window.location.pathname.replaceAll('/', '')];
+const currentPath =
+  paths[window.location.pathname.split('/')[window.location.pathname.split('/').length-2]];
 /* const buttonTags = document.querySelectorAll(".buttonTag"); */
 closeResponsiveMenu.addEventListener('click', () => {
   responsiveMenu.style.display = 'none';
@@ -29,9 +30,9 @@ videos?.forEach(video => {
     video.style.height = `calc(${videoWidth} * 0.5625)`;
   });
 });
- 
+
 mainVideo?.addEventListener('canplaythrough', () => {
-  console.log('test')
+  console.log('test');
   setTimeout(() => {
     loader.style.display = 'none';
   }, 500);
@@ -55,9 +56,9 @@ const getFaceStyles = face => {
   return { imgHeight, gap, buttonTag };
 };
 const defaultFace = () => {
-  console.log(window.location.pathname.replaceAll('/', ''))
+  console.log(window.location.pathname.split('/')[window.location.pathname.split('/').length-2]);
   if (currentPath) {
-    console.log('notHome')
+    console.log('notHome');
     const { gap, imgHeight } = getFaceStyles(currentPath);
     currentPath.style.visibility = 'unset';
     currentPath.style.bottom = `calc( -${gap} - ${imgHeight} )`;
