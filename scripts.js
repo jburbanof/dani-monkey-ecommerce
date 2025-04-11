@@ -32,7 +32,9 @@ videos?.forEach(video => {
  
 mainVideo?.addEventListener('canplaythrough', () => {
   console.log('test')
-  loader.style.display = 'none';
+  setTimeout(() => {
+    loader.style.display = 'none';
+  }, 500);
 });
 
 mainVideo?.addEventListener('loadedmetadata', () => {
@@ -53,7 +55,7 @@ const getFaceStyles = face => {
   return { imgHeight, gap, buttonTag };
 };
 const defaultFace = () => {
-  console.log('default')
+  console.log(window.location.pathname.replaceAll('/', ''))
   if (currentPath) {
     console.log('notHome')
     const { gap, imgHeight } = getFaceStyles(currentPath);
