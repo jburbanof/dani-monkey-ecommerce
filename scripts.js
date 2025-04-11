@@ -31,6 +31,7 @@ videos?.forEach(video => {
 });
  
 mainVideo?.addEventListener('canplaythrough', () => {
+  console.log('test')
   loader.style.display = 'none';
 });
 
@@ -52,7 +53,9 @@ const getFaceStyles = face => {
   return { imgHeight, gap, buttonTag };
 };
 const defaultFace = () => {
+  console.log('default')
   if (currentPath) {
+    console.log('notHome')
     const { gap, imgHeight } = getFaceStyles(currentPath);
     currentPath.style.visibility = 'unset';
     currentPath.style.bottom = `calc( -${gap} - ${imgHeight} )`;
