@@ -45,6 +45,21 @@ body {
   left: 0;
   width: 100%;
 }
+.content .project .videoIntro #loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.content .project .videoIntro #loader img {
+  width: 150px;
+  border: 10px solid #faeb2c;
+}
 .content .project .videoIntro video {
   top: 0;
   left: 0;

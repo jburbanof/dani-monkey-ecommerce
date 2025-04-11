@@ -6,6 +6,7 @@ const closeResponsiveMenu = document.getElementById('closeResponsiveMenu');
 const videos = Array.from(document.querySelectorAll('iframe'));
 const faces = document.querySelectorAll('.face');
 const mainVideo = document.getElementById('mainVideo');
+const loader = document.getElementById('loader');
 const paths = {
   illustration: faces[0],
   animation: faces[1],
@@ -27,6 +28,10 @@ videos?.forEach(video => {
   window.addEventListener('resize', () => {
     video.style.height = `calc(${videoWidth} * 0.5625)`;
   });
+});
+ 
+mainVideo?.addEventListener('canplaythrough', () => {
+  loader.style.display = 'none';
 });
 
 mainVideo?.addEventListener('loadedmetadata', () => {
