@@ -219,8 +219,9 @@ body {
       box-sizing: border-box;
       padding: 20px;
       justify-content: space-between;
+      align-items: center;
       .dmLogo {
-        width: 180px;
+        width: 100px;
       }
       .navButtons {
         display: none;
@@ -235,7 +236,7 @@ body {
         cursor: pointer;
         outline: inherit;
         img {
-          width: 100px;
+          width: 70px;
         }
       }
       .responsiveMenu {
@@ -284,7 +285,7 @@ body {
           cursor: pointer;
           outline: inherit;
           img {
-            width: 100px;
+            width: 70px;
           }
         }
       }

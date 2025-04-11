@@ -39,12 +39,12 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
     img {
       width: 250px;
     }
     .textSide {
-      width: 60%;
-      min-width: 400px;
+      max-width: 500px;
       h1 {
         color: $details-color;
       }
@@ -281,8 +281,9 @@ body {
       box-sizing: border-box;
       padding: 20px;
       justify-content: space-between;
+      align-items: center;
       .dmLogo {
-        width: 180px;
+        width: 100px;
       }
       .navButtons {
         display: none;
@@ -297,7 +298,7 @@ body {
         cursor: pointer;
         outline: inherit;
         img {
-          width: 100px;
+          width: 70px;
         }
       }
       .responsiveMenu {
@@ -343,7 +344,7 @@ body {
           cursor: pointer;
           outline: inherit;
           img {
-            width: 100px;
+            width: 70px;
           }
         }
       }

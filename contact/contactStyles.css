@@ -41,13 +41,13 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .content .formContainer img {
   width: 250px;
 }
 .content .formContainer .textSide {
-  width: 60%;
-  min-width: 400px;
+  max-width: 500px;
 }
 .content .formContainer .textSide h1 {
   color: #faea24;
@@ -273,9 +273,10 @@ body {
     box-sizing: border-box;
     padding: 20px;
     justify-content: space-between;
+    align-items: center;
   }
   #landing #navBar .dmLogo {
-    width: 180px;
+    width: 100px;
   }
   #landing #navBar .navButtons {
     display: none;
@@ -291,7 +292,7 @@ body {
     outline: inherit;
   }
   #landing #navBar #openResponsiveMenu img {
-    width: 100px;
+    width: 70px;
   }
   #landing #navBar .responsiveMenu {
     position: fixed;
@@ -338,7 +339,7 @@ body {
     outline: inherit;
   }
   #landing #navBar .responsiveMenu #closeResponsiveMenu img {
-    width: 100px;
+    width: 70px;
   }
   #landing .introContainer {
     flex-direction: column;

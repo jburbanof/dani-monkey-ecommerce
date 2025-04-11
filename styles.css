@@ -91,10 +91,10 @@ body {
 .content .project .description img {
   width: 50%;
   min-width: 250px;
+  max-width: 300px;
 }
 .content .project .description .descriptionContent {
-  width: 50%;
-  min-width: 300px;
+  max-width: 450px;
 }
 .content .project .description .descriptionContent h2 {
   color: #faeb2c;
@@ -201,6 +201,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  max-width: 750px;
 }
 
 .achievements {
@@ -208,6 +209,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 .achievements h2 {
   width: 100%;
@@ -218,20 +220,19 @@ body {
 }
 .achievements .content {
   margin: 30px 0;
-  width: 80%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 45px;
 }
 .achievements .content img {
   width: 200px;
 }
 .achievements .content .text {
-  width: 60%;
-  min-width: 300px;
+  max-width: 450px;
 }
 .achievements .content .text p {
   color: white;
@@ -302,7 +303,7 @@ body {
   cursor: pointer;
   background-color: #0f1a1d;
   color: #faeb2c;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -380,9 +381,11 @@ body {
     padding: 20px;
     z-index: 3;
     justify-content: space-between;
+    align-items: center;
   }
   #landing #navBar .dmLogo {
-    width: 180px;
+    width: 100px;
+    z-index: 5;
   }
   #landing #navBar .navButtons {
     display: none;
@@ -398,7 +401,7 @@ body {
     outline: inherit;
   }
   #landing #navBar #openResponsiveMenu img {
-    width: 100px;
+    width: 70px;
   }
   #landing #navBar .responsiveMenu {
     position: fixed;
@@ -445,7 +448,7 @@ body {
     outline: inherit;
   }
   #landing #navBar .responsiveMenu #closeResponsiveMenu img {
-    width: 100px;
+    width: 70px;
   }
   #landing .introContainer {
     flex-direction: column;

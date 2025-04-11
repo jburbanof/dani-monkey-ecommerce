@@ -87,10 +87,11 @@ body {
       img {
         width: 50%;
         min-width: 250px;
+        max-width: 300px;
+    
       }
       .descriptionContent {
-        width: 50%;
-        min-width: 300px;
+        max-width: 450px;
         h2 {
           color: $details-color;
           font-weight: bold;
@@ -204,6 +205,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 750px;
   }
 }
 .achievements {
@@ -211,6 +213,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   h2 {
     width: 100%;
     background-color: white;
@@ -220,19 +223,18 @@ body {
   }
   .content {
     margin: 30px 0;
-    width: 80%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 45px;
     img {
       width: 200px;
     }
     .text {
-      width: 60%;
-      min-width: 300px;
+      max-width: 450px;
       p {
         color: white;
         margin: 10px 0;
@@ -304,7 +306,7 @@ body {
         cursor: pointer;
         background-color: $background-color;
         color: $details-color;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         text-transform: uppercase;
         text-decoration: none;
@@ -383,9 +385,12 @@ body {
       box-sizing: border-box;
       padding: 20px;
       z-index: 3;
-      justify-content: space-between;
+      justify-content: 
+      space-between;
+      align-items: center;
       .dmLogo {
-        width: 180px;
+        width: 100px;
+        z-index: 5
       }
       .navButtons {
         display: none;
@@ -400,7 +405,7 @@ body {
         cursor: pointer;
         outline: inherit;
         img {
-          width: 100px;
+          width: 70px;
         }
       }
       .responsiveMenu {
@@ -446,7 +451,7 @@ body {
           cursor: pointer;
           outline: inherit;
           img {
-            width: 100px;
+            width: 70px;
           }
         }
       }
