@@ -15,7 +15,6 @@ const paths = {
 };
 const currentPath =
   paths[window.location.pathname.split('/')[window.location.pathname.split('/').length-2]];
-/* const buttonTags = document.querySelectorAll(".buttonTag"); */
 closeResponsiveMenu.addEventListener('click', () => {
   responsiveMenu.style.display = 'none';
 });
@@ -32,10 +31,9 @@ videos?.forEach(video => {
 });
 
 mainVideo?.addEventListener('canplaythrough', () => {
-  console.log('test');
   setTimeout(() => {
     loader.style.display = 'none';
-  }, 500);
+  }, 100);
 });
 
 mainVideo?.addEventListener('loadedmetadata', () => {
@@ -56,9 +54,7 @@ const getFaceStyles = face => {
   return { imgHeight, gap, buttonTag };
 };
 const defaultFace = () => {
-  console.log(window.location.pathname.split('/')[window.location.pathname.split('/').length-2]);
   if (currentPath) {
-    console.log('notHome');
     const { gap, imgHeight } = getFaceStyles(currentPath);
     currentPath.style.visibility = 'unset';
     currentPath.style.bottom = `calc( -${gap} - ${imgHeight} )`;
